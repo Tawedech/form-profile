@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มบันทึกประวัติส่วนตัว</title>
+</head>
+<body>
+    <form action="myprofile.php" method="POST">
+        <table>
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" name="fname" required></td>
+            </tr>
+            <tr>
+                <td>สกุล</td>
+                <td><input type="text" name="lname" required></td>
+            </tr>
+            <tr>
+                <td>สาขาวิชา</td>
+                <td><input type="text" name="major" required></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td>
+                    <input type="radio" name="gender" value="ชาย" required> ชาย
+                    <input type="radio" name="gender" value="หญิง"> หญิง
+                    <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+                </td>
+            </tr>
+            <tr>
+                <td>งานอดิเรก</td>
+                <td>
+                    <input type="checkbox" name="hobby[]" value="ดูหนัง"> ดูหนัง<br>
+                    <input type="checkbox" name="hobby[]" value="เล่นเกม"> เล่นเกม<br>
+                    <input type="checkbox" name="hobby[]" value="อื่น ๆ"> อื่น ๆ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" style="background-color: orange; padding: 10px;">SUBMIT</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
